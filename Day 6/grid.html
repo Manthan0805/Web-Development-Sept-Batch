@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .product{
+            display: grid;
+            grid-template-columns: repeat(auto-fit , minmax(250px,1fr));
+            gap: 10px;
+        }
+        .box{
+            border: 1px solid black;
+            text-align: center;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <div class="box">cake</div>
+        <div class="box">Cake-Price</div>
+        <div class="box">Cookie</div>
+        <div class="box">cookie-price</div>
+        <div class="box">Pastry</div>
+        <div class="box">Pastry-Price</div>
+    </div>
+</body>
+</html>
