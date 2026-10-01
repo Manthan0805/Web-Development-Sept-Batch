@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //logic - give user the cafe menu and let user from menu
+    // bill is more than 150 -10% discount and calculate final bill
+
+    //cafe menu
+
+    let cafemenu = [
+    {name: "coffee", price:100},
+    {name: "tea", price:50},
+    {name: "sandwich", price:200},
+    ]
+
+    console.log("user choice : ")
+
+    console.log("1st Product", cafemenu[0].name ,"2nd product", cafemenu[1].name)
+    console.log("Price 1" , cafemenu[0].price, "Price 2", cafemenu[1].price)
+
+    let TotalBill = cafemenu[0].price + cafemenu[1].price
+
+    if(TotalBill >= 150){
+        let discount = TotalBill * 0.1
+        console.log("Bill After Discount ", TotalBill - discount)
+    }else{
+        console.log("Total Bill" , TotalBill)
+    }
+    </script>
+</body>
+</html>
