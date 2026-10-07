@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="greet()">Greet Me</button> 
+    <script>
+        // functions - to do specific task
+
+        // 1. function-keyword functioname(){ // body-instructions }
+        function greet(){
+            console.log("Good Morning User")
+
+            alert("Welcome Back User")
+        }
+        //greet() //calling the function
+
+        //2. function with parameter (parameter/argument - acts like variable)
+
+        function greeting(name){
+            console.log("Good Morning " , name)
+
+        }
+        greeting("Manthan") // calling the function with parameter
+        greeting("Ayush")
+        greeting("Riya")
+
+        //function with return keyword
+        function bill(price , quantity){
+
+            return price * quantity
+
+        }
+        let result = bill(100 , 2) // calling the function with return keyword
+        console.log("Total Bill" , result)
+
+        console.log(bill(50 , 3)) // calling the function with return keyword
+        // Arrow function: ()=> {}
+        let add = (a,b)=>   a+b
+        add(10,20)
+        
+        console.log("Addition" , add(10,20)) // calling the arrow function
+
+
+    </script>
+</body>
+</html>

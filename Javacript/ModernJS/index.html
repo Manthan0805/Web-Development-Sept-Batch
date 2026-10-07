@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = "john"
+
+        let age = 20
+        console.log("Good morning my name is " + name + " and I am " + age + " years old")
+
+        //Template string = ` backtic symbol - below esc button ${var/parameter}
+        console.log(`Good morning my name is ${name} and I am ${age} years old`)
+
+        //set time out function
+        // setTimeout(() => {
+        //     console.log("I am showing after 3 seconds")
+        // }, 3000) //1000 milliseconds = 1 second
+
+        // setInterval(() => {
+        //     console.log("I am showing every 2 seconds")
+            
+        // }, 2000) //1000 milliseconds = 1 second;
+
+        //spread operators - ... 3 dot it will helpp you createe clone of array or object
+        let fruit = ["Apple", "Banana", "Mango"]
+        let vegetables = ["Potato", "Tomato", "Onion"]
+        let items = [...fruit, ...vegetables]
+
+        console.log(items)
+        
+    </script>
+</body>
+</html>
