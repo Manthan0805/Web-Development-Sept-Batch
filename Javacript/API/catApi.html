@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALUAAACUCAMAAADifZgIAAAAY1BMVEX///8AAAAICAiUlJTm5ubPz89mZmbt7e3f399tbW17e3uqqqrj4+PW1tb6+vrc3Nx0dHRAQEBJSUkPDw8jIyOhoaEVFRVbW1s2NjbCwsKHh4fz8/MpKSnIyMguLi6zs7NQUFARaGivAAADcUlEQVR4nO2Wi26jOhRFfczDgcQY4ti8Ssj/f+UcY2ijdqRJRtElo7uXSNl1kLI4PtgIAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgE/GXseQucTEkakf+WT6acpCUP0k1DRxquK12iXzaR/bDUN5UBuJrKQ2xIQo4dNAgVaJmT74Q479qRiF6cheQtjXuqi4ijcqp76lpBIqv8gwlJDr3Zla0ftG9Jauhm+trqoLX6nn+R2se3tjDU3XVGTk2msWrPnP1JFarOWN6jFYH5fr9yZaDzRwHm+khaPDHNohoZ7nIKd+smxNA/9fsXVBR9EnzqldrQ+rdWjlMSc9+rNJQztv1tPkz2xdVjepqRa5nEV5ITL7Wttg7ajgnF4+1ESXriGueUK8bJiG1ORvwVpMvrX1cn/qkNvDrta8hpxSdfqwTqmS+ySn8uiCWkKzynKu7nSJ1hWvKnWlqZkrnpR9a22IumujJz51dE5HOnMVtaUq4aL7sBb2FDqE52K8hgVvINk0e3dIOpRlOZz4nOfHSmT1kQdHl6d9XZbLvmNKx5+Zk64dd5PhKwe9qzT4fzKe0vfh9OjmfyT5PtDxYet34nHrrj9sZJnZos6+RvWWzH00X/El6L57wvqmjrzeBoqxcmtMlCg3xGmIoXYiXb+vZ16v19g/+FN/Ij0/YX0+FdsEqbFdU2PENujF9LHGosq20eGrt9zrrOcnrGvy0kvy0dp7K+3ZCLlKXUTWWeul9NHa82EXa++l9a+zPv2Vtd2s/WJNd9bE1tYu1vLe2vLgjtYsImOt2Y9lfljbMBex1jLcYrDmSvPVr7R+pq9rLnMoXLTmokvJr3Pfau1J8tsnW0ueC7n2Nd+q38/6x9P4vdb/xdMIa1jD+t+1lssRrOXvraX8tF7i3ta3lHcZ3uQ+12tevGWwll/WvC5bintjWKJtXK95Ywy7z261DvvhujfK7T3kvtZ8TyR/7I1+2eb329FDIbm2S1/bUOTvHbJMQLS2y7HUOvbVPrVOh65Z+FBjEVOTH8Q62JyFbmPqhspc15iIeb2ge/Sn/sRz79f6oI1eUIpDzGrUG6OKQ0YflNq+N2OqY85S9RJG/Yy1b4uNPH8iFnejL6H1D1s7eicefUSy5J3IHrQGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+XX4B1bFTTssOR9YAAAAASUVORK5CYII=" id="cat" height="300px" width="400px">
+    <button id="btn" onclick="getImage()">Get Cat</button>
+    <script>
+        function getImage(){
+            const catimage = document.getElementById(cat)
+
+            fetch('https://api.thecatapi.com/v1/images/search')
+
+            .then(res => res.json())
+            .then(data => catimage.src = data[0].url)
+
+
+
+            .catch(err => console.log('error getting an image ',err))
+        }
+    </script>
+
+</body>
+</html>

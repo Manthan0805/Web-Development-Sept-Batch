@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f4f0">
+  <meta name="description" content="Meet RSHOES: everyday sneakers selected for comfort, versatility, and going places.">
+  <title>Our story — RSHOES</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">Complimentary shipping over ₹2,000 <a href="shoes.html">Explore the collection <span aria-hidden="true">→</span></a></div>
+  <header class="site-header"><a class="brand" href="index.html" aria-label="RSHOES home"><span class="brand-mark" aria-hidden="true">R</span><span>RSHOES<span class="brand-dot">.</span></span></a><nav class="main-nav" aria-label="Main navigation"><a class="nav-link" href="index.html">Home</a><a class="nav-link" href="shoes.html">Shop shoes</a><a class="nav-link" href="about.html" aria-current="page">Our story</a><a class="nav-link" href="contact.html">Contact</a></nav><div class="header-actions"><button class="login-button" id="login-button" type="button">Sign in</button><button class="cart-button" id="cart-button" type="button" aria-label="Open shopping bag" aria-expanded="false"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M5 8h14l1 12H4L5 8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 9V6a3 3 0 0 1 6 0v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span>Bag</span><span class="cart-count" id="cart-count">0</span></button></div></header>
+  <main>
+    <section class="story-page section-wrap">
+      <div class="page-intro"><p class="eyebrow"><span class="eyebrow-line"></span> WHY WE DO WHAT WE DO</p><h1>Made for your <em>everyday.</em></h1><p>Good shoes don't need to overcomplicate things. They just need to feel right, look good, and be there for the day ahead.</p></div>
+      <div class="story-lead">At RSHOES, we think the best pair isn't waiting for a special occasion. <em>It's the one you reach for every day.</em></div>
+      <div class="story-columns"><div><h2>Good design, worn often.</h2><p>We bring together approachable sneakers for real days and real wardrobes. Clean lines, easy-to-wear colors, and styles that work from the first errand to the last stop.</p></div><div><h2>Find your kind of fit.</h2><p>Browse by style, compare prices, and choose from the available UK sizes on each product. Add your pair to your bag whenever you find one that feels right.</p></div></div>
+      <div class="story-values"><article class="story-value"><span>01</span><h3>Everyday by design</h3><p>Versatile sneakers selected to fit naturally into how you already dress and live.</p></article><article class="story-value"><span>02</span><h3>Your choice, your size</h3><p>Browse different styles and use the size selector to choose the pair that fits you.</p></article><article class="story-value"><span>03</span><h3>Shopping made clear</h3><p>See the price, select a size, and review your order in your bag before checkout.</p></article></div>
+      <div class="story-cta"><a class="button button-dark" href="shoes.html">Shop the collection <span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">R</span><span>RSHOES<span class="brand-dot">.</span></span></a><p>Good shoes. Everyday.</p><span>© <span id="current-year"></span> RSHOES. All rights reserved.</span></footer>
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-title"><div class="drawer-heading"><div><p class="eyebrow">READY WHEN YOU ARE</p><h2 id="cart-title">Your bag <span id="bag-item-count">(0)</span></h2></div><button class="icon-button" id="close-cart" type="button" aria-label="Close bag">×</button></div><div class="cart-items" id="cart-items"></div><p class="cart-empty" id="cart-empty">Your bag is ready for a good pair.</p><div class="cart-footer"><div class="subtotal"><span>Subtotal</span><strong id="cart-subtotal">₹0</strong></div><p>Free delivery over ₹2,000. Returns accepted within 7 days on unworn items.</p><button class="button button-dark checkout-button" id="checkout-button" type="button">Continue to checkout <span aria-hidden="true">→</span></button></div></aside>
+  <dialog class="account-dialog" id="checkout-dialog" aria-labelledby="checkout-title"><form class="dialog-form" id="checkout-form"><button class="icon-button dialog-close" type="button" data-close-dialog aria-label="Close checkout">×</button><p class="eyebrow">ALMOST THERE</p><h2 id="checkout-title">Let's find these<br>shoes a <em>home.</em></h2><label for="checkout-name">Full name</label><input id="checkout-name" name="name" type="text" placeholder="Your name" required autocomplete="name"><label for="checkout-email">Email address</label><input id="checkout-email" name="email" type="email" placeholder="you@example.com" required autocomplete="email"><label for="checkout-address">Delivery address</label><input id="checkout-address" name="address" type="text" placeholder="Street, city, and postal code" required autocomplete="street-address"><button class="button button-dark" type="submit">Place demo order <span aria-hidden="true">→</span></button><p class="dialog-note">Demo checkout only—no payment is collected and no shoes are shipped.</p></form></dialog>
+  <dialog class="account-dialog" id="login-dialog" aria-labelledby="login-title"><form class="dialog-form" id="login-form"><button class="icon-button dialog-close" type="button" data-close-dialog aria-label="Close sign in">×</button><p class="eyebrow">GOOD TO HAVE YOU BACK</p><h2 id="login-title">Your next pair<br>is <em>waiting.</em></h2><label for="login-email">Email address</label><input id="login-email" name="email" type="email" placeholder="you@example.com" required autocomplete="email"><label for="login-password">Password</label><input id="login-password" name="password" type="password" placeholder="At least 6 characters" minlength="6" required autocomplete="current-password"><button class="button button-dark" type="submit">Sign in <span aria-hidden="true">→</span></button><p class="dialog-note">Demo sign-in saves your email on this device. No password is sent anywhere.</p></form></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
